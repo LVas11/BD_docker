@@ -1,0 +1,18 @@
+{
+    "0": "Clear sky. Enjoy!",
+    "1": "Mainly clear. Get some sun!", 
+    "2": "Partly cloudy", 
+    "3": "Overcast. The sun is hiding",
+    "45": "Foggy (might be froggy?)", 
+    "48": "Depositing rime fog",
+    "51": "Light drizzle - moisturizing", 
+    "53": "Moderate drizzle", 
+    "55": "Dense drizzle",
+    "61": "Slight rain - grab a jacket", 
+    "63": "Moderate rain - grab an umbrella", 
+    "65": "Heavy rain - a boat might be useful",
+    "71": "Slight snow", 
+    "73": "Moderate snow", 
+    "75": "It's beggining to look a lot like Christmas (Heavy snow)",
+    "95": "Thunderstorm"
+}
