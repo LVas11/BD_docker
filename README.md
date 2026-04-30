@@ -20,9 +20,9 @@ Contents of the Docker file:
 Steps followed to create the Docker image:
 - Created Dockerfile as described above. 
 - From the Dockerfile the image was created by running the below comand in terminal:
-docker build -t weather-tool:v1 .
+  docker build -t weather-tool:v1 .
 - Running the container by the below command. NOTE: since the weather tool requires user input, it is run in interactive terminal (-it):
-docker run -it --rm -v ${PWD}:/app weather-tool:v1
+  docker run -it --rm -v ${PWD}:/app weather-tool:v1
 - The forecast graph forecast_XCITY.png file is then saved locally in working directory
 - Docker image was pushed to registry (Docker Hub). Image tag: lvas55/weather-tool:latest
 
