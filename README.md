@@ -3,21 +3,23 @@
 The python project is a simple command-line application that generates current weather conditions and a 24-hour forecast for user provided city. 
 The forecast is presented in a graph format for each hour and saved as a .png file. 
 
-Files: 
+
+**Files:** 
  - weather.py: main python code for the CLI application
  - weather_codes.json: contains keys of weather codes used by the weather tool
  - requirements.txt: dependencies required for the python code
  - Dockerfile: contains instructions to build the Docker image.
 
-Contents of the Docker file:
-- Base image: specifies Python 3.9 slim base image to limit image size;
-- Workspace: sets /app as primary directory
-- Environment settings: sets PYTHONUNBUFFERED=1 to ensure prompts appear in terminal without buffer
-- Dependecies: copies dependencies from requirements.txt file; installs them
-- App code: copied the application code and .json file
+
+**Contents of the Docker file:**
+- *Base image:* specifies Python 3.9 slim base image to limit image size;
+- *Workspace:* sets /app as primary directory
+- *Environment* settings: sets PYTHONUNBUFFERED=1 to ensure prompts appear in terminal without buffer
+- *Dependecies:* copies dependencies from requirements.txt file; installs them
+- *App code:* copied the application code and .json file
 
 
-Steps followed to create the Docker image:
+**Steps followed to create the Docker image:**
 - Created Dockerfile as described above. 
 - From the Dockerfile the image was created by running the below comand in terminal:
   docker build -t weather-tool:v1 .
@@ -26,9 +28,12 @@ Steps followed to create the Docker image:
 - The forecast graph forecast_XCITY.png file is then saved locally in working directory
 - Docker image was pushed to registry (Docker Hub). Image tag: lvas55/weather-tool:latest
 
-Now the project can be run via docker: -it -v ${PWD}:/app lvas55/weather-tool:latest
 
-Issues and notes:
+**Now the project can be run via docker:** -it -v ${PWD}:/app lvas55/weather-tool:latest
+
+
+**Issues and notes:**
+
 Two main issue were encountered in the process of making Docker image and running the container:
 
 - During the container creation process, a version mismatch was identified for mathplotlib library.
