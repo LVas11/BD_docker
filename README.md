@@ -28,8 +28,8 @@ The forecast is presented in a graph format for each hour and saved as a .png fi
 - The forecast graph forecast_XCITY.png file is then saved locally in working directory
 - Docker image was pushed to registry (Docker Hub). Image tag: lvas55/weather-tool:latest
 
-
-**Now the project can be run via docker:** ```-it -v ${PWD}:/app lvas55/weather-tool:latest```
+**Image tag**:  ```lvas55/weather-tool:latest ```
+The project can be run via docker: ```-it -v ${PWD}:/app lvas55/weather-tool:latest```
 
 
 **Issues and notes:**
